@@ -23,6 +23,7 @@ export default function Pokedex() {
     fetch(urlApi)
     .then((response) => response.json())
     .then((data) => setResult(
+      // eslint-disable-next-line array-callback-return
       data.results.map((item) => {
         fetch(item.url)
           .then((response) => response.json())
@@ -30,11 +31,13 @@ export default function Pokedex() {
           setPoke(arr); 
       }),
     ));
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
  
 
   setTimeout(() => {
     setLoad(false);  
+    console.log(result);
   }, 1000);
  
 
