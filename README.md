@@ -7,4 +7,4 @@ Pokedex is a illustrated Pokemon Encyclopedia!!.
 
 ## Demo
 
-- https://pokedexea.azurewebsites.net/ 
+- https://pokedex-react-demo.netlify.app
